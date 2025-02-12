@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Major+Mono+Display&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Monsieur+La+Doulaise&family=Quicksand:wght@300..700&family=Sigmar+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", serif;
+}
+
+*::selection {
+  color: wheat;
+  background-color: black;
+}
+
+html,
+body {
+  overflow: hidden;
+  width: 100vw;
+}
+
+.main {
+  background: white;
+}
+
+.noise::before{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100Vw;
+  height: 100vh;
+  content:"";
+  opacity: .05;
+  z-index: 100;
+  pointer-events: none;
+  background-image: url('https://raw.githubusercontent.com/taimoorshahzada/Film-Grain-Noise-Effect-on-Background-in-Website-using-Pure-CSS/refs/heads/main/noise.gif');
+
+}
+
+/* first */
+.first {
+  width: 100%;
+  height: 340vh;
+  color: rgb(0, 0, 0);
+svg{
+  scale: 2;
+  position: relative;
+  top:34%;
+  left: 70%;
+}
+  .head {
+    position: relative;
+    top:9%;
+    left:30%;
+    height: 50vh;
+    width: 50vw;
+    line-height: 0px;
+    p{
+      font-size: 2em;
+      text-transform: uppercase;
+      color: orangered;
+      font-weight: 700;
+    }
+    h1 {
+      position: relative;
+      text-align: center;
+      font-size: 8em;
+      font-weight: 300;
+      line-height: 15vh;
+      top:20px;
+    }
+    
+    h1:nth-of-type(1) {
+      font-weight: 500;
+      left:-20%;
+    }
+     
+ h1:nth-of-type(3) {
+      font-weight: 500;
+      left:20%;
+    }
+  }
+}
+
+.first .nav {
+  position: absolute;
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first .nav .logo {
+  list-style: none;
+  font-size: 1.3rem;
+  margin-left: 90px;
+}
+
+.first .nav .items ul {
+  margin-right: 50px;
+  display: flex;
+  list-style: none;
+ li {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin: 0 20px;
+  font-weight: 200;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.667);
+    transition: all 0.2s ease-in-out;
+  }
+
+  a:hover::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #000000;
+  }
+}
+}
+
+.Firsttext {
+  width: 55%;
+  font-size: 2em;
+  font-weight: 300;
+  color: black;
+  overflow: hidden;
+}
+
+.Firsttext .singleLine {
+  width: 100%;
+  height: 3.1vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.Firsttext .singleLine .text {
+  position: absolute;
+}
+
+.secondText {
+  width: 36%;
+  color: black;
+}
+
+.secondText .singleLine {
+  width: 100%;
+  height: 2.5vw;
+  font-size: 1.3em;
+  font-weight: 200;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.head-start{
+  width: 70vw;
+  font-size: 6em;
+  display: block;
+  position: relative;
+  top:70vh;
+  left: 10vw;
+  line-height: 15vh;
+  font-weight: 700;
+}
+
+
+
+/* second */
+.about-me {
+  height: 150vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+
+  .heading {
+    position: relative;
+    width: 90%;
+    height: 20vh;
+    left: 5%;
+    font-size: 4em;
+    color: #fff;
+    p{
+      text-transform: capitalize;
+      font-weight: 200;
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 10vh 30vh;
+    z-index: 2;
+
+  }
+
+  .content .left {
+    width: 50%;
+    height: 50vh;
+    font-size: 4em;
+    line-height: 8vh;
+    color: rgb(255, 255, 255);
+
+      p{
+        font-weight: 500;
+        color: #000000;
+      }
+  }
+}
+
+.content .right {
+  width: 45%;
+  margin: 10px;
+}
+
+.content .right .singleLine {
+  width: 100%;
+  height: 4vw;
+  position: relative;
+}
+
+.content .right .singleLine p {
+  position: absolute;
+  font-size: 2.2em;
+  color: #000000;
+}
+.resume {
+  width: 70%;
+  height: 8vh;
+  border-radius: 50px;
+  align-self: center;
+  top: 20vh;
+  background: #edbfff;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p{
+    z-index: 99;
+    font-weight: 400;
+  }
+}
+
+.resume span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70vw;
+  height: 70vw;
+  border-radius: 50%;
+  background: #e83636;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.4s ease-in-out;
+  z-index: 1;
+  /* Background element */
+}
+
+.resume .hovered {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.resume:hover span {
+  transform: translate(-50%, -50%) scale(1); /* Scale on hover */
+}
+
+
+.resume:focus,.resume:hover, .resume:active{
+  outline: none;
+  border: none;
+}
+.resume:focus-visible {
+  outline: none !important;
+}
+
+
+
+
+/* third */
+.experience {
+  height: 150vh;
+  position: relative;
+  background: #111111;
+  color: #c6c0c0;
+  margin-top: 30vh;
+
+  .heading2 {
+    width: 100vw;
+    position: relative;
+    font-size: 6em;
+    left: 5%;
+    font-weight: 400;
+
+    p{
+      font-weight: 500;
+    }
+  }
+    .right {
+      width: 100%;
+      height: 130vh;
+      position: relative;
+      margin-top: 10vh;
+
+      .right-elem {
+        height: 25vh;
+        padding-top: 6vh;
+        padding-left: 10vw;
+        /* font-family: "Raleway", serif; */
+        color: rgb(208, 203, 203);
+        border-bottom: 0.5px solid #656565;
+        overflow: hidden;
+        position: relative;
+        display: grid;
+        grid-template-columns: 10px auto;
+        align-items: start;
+        gap: 40vw;
+
+        p:nth-of-type(1) {
+          font-size: 2.2em;
+          font-weight: 600;
+          width: 43vh;
+          color:rgb(123, 120, 120);
+        }
+
+        p:nth-of-type(2) {
+          font-size: 1.3em;
+          width: 30vw;
+          font-weight: 400;
+          color: gray;
+        }
+      }
+    }
+  }
+
+.scroll-box {
+  width: 100%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  pointer-events: none;
+  height: 25vh;
+  background: #1f1f1f;
+  position: absolute;
+}.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-elem {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.right-elem p {
+  position: relative;
+  z-index: 2;
+}
+
+.hover-box {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: rgb(255, 255, 255);
+  opacity: 0.8;
+  transform: translateY(-50%);
+  transition: height 0.1s ease;
+  z-index: 1;
+}
+
+
+
+
+/* fourth */
+.third {
+  width: 100vw;
+  height: 102vh;
+  position: relative;
+  margin-top: 10vh;
+
+  .info {
+    width: 100vw;
+    padding-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 9em;
+    font-family: "Raleway", serif;
+    line-height: 105%;
+
+    div:first-child {
+      position: relative;
+      left: -12%;
+    }
+
+    div:nth-child(3) {
+      position: relative;
+      left: 16%;
+
+    }
+  }
+
+  .cursive {
+    font-family: "Monsieur La Doulaise", serif;
+    font-weight: 400;
+    text-transform: lowercase;
+    color: orangered;
+  }
+
+  .contact {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    font-family: "Raleway", serif;
+    border: 1px dotted rgb(255, 255, 255);
+  }
+}
+
+.main-page {
+  display: flex;
+}
+
+.contact-page {
+  width: 100vw;
+  height: 130vh;
+  padding: 20px;
+  background: #edbfff;
+  color: black;
+  font-family: "Raleway", serif;
+
+  .heading {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 20px 20px 100px;
+    align-items: center;
+
+  }
+
+  p {
+    font-size: 3em;
+  }
+
+  button {
+    width: 23vh;
+    height: 23vh;
+    font-weight: 400;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    font-size: 1em;
+    cursor: pointer;
+    position: relative;
+    left: 45%;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s;
+
+    &:hover {
+      background-color: rgb(0, 0, 0);
+      color: white;
+      border: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+/* fifth */
+
+.contact-form {
+  position: relative;
+  width: 50%;
+  margin-left: 100px;
+  padding-top: 40px;
+  height: 75vh;
+
+  .name {
+    width: 80%;
+  }
+
+  p {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+
+  .email {
+    padding-top: 4vh;
+    width: 80%;
+  }
+
+  .message {
+    padding-top: 4vh;
+    width: 80%;
+    height: 30vh;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.1em;
+    resize: none;
+    color: #232323;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+
+  }
+
+  input:focus,
+  textarea:focus {
+    color: black;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 1rem;
+  }
+
+  .submit {
+    overflow: hidden;
+    width: 80%;
+    height: 6vh;
+    position: absolute;
+    left: 0;
+    top: 110%;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 50px;
+  
+    p{
+      z-index: 99;
+      font-weight: 200;
+      font-size: 1.3em;
+    }
+  }
+  
+  .submit span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 70vw;
+    height: 70vw;
+    border-radius: 50%;
+    background: #e83636;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1s ease-in-out;
+    z-index: 1;
+  }
+  
+  .submit .hovered {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .submit:hover span {
+    transform: translate(-50%, -50%) scale(1); /* Scale on hover */
+  }
+  .resume:focus,.resume:hover, .resume:active{
+    outline: none;
+    border: none;
+  }
+}
+
+.impo-links {
+  display: flexbox;
+  width: 30%;
+  margin: 50px 100px;
+  font-weight: 400;
+
+
+  ul {
+    font-size: 1.1em;
+    color: gray;
+    list-style: none;
+    margin: 30px 20px;
+    color: black;
+    font-weight: 400;
+
+
+    li {
+      font-size: 1.6em;
+      padding: 2px 10px;
+      font-weight: 400;
+      color: black;
+      font-weight: 300;
+
+      a {
+        color: black;
+        text-decoration: none;
+        font-weight: 400;
+        font-weight: 300;
+      }
+    }
+  }
+
+}
+.image{
+  position: relative;
+  left:25%;
+  top:10%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 40vh;
+  color: rgb(0, 0, 0);
+  background-image: url('https://media-hosting.imagekit.io//c71dde330cb54daa/photo.webp?Expires=1833310076&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=bdJthksg3DCgRjhTJkEHtYEnONEj2pe0qCleyF3Xt~luo--gr~dzyZht3PtDaIqBzB6Rs7zjpOh5BA8ZAL4odB1z~jvG-H1izyXoPWZgU8qZOqeeM8P8vFy6EanvvpgKT~ygCBXDK5y635z12SVj2GN-SXki5zpZ2bg-K-0bnDkKDaO7PY0nRux6q4Fuy9SOGctN6aYUZRYNoqOlGoDKvrhDw4zGq3WJBVhkiqpRi~f8RZfLaRzYJlbFFcLN1oSHsSxDEZueWO0Oqww~9TWt2WntCJx2pn5TQDO0DLIZvVGIvMnKV-BI00aua8~VKOfEHSXaOCpFo5fbqxP3orpYDg__');
+  background-position: bottom bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* mix-blend-mode; */
+}
+
+
+
