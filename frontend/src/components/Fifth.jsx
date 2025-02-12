@@ -60,7 +60,7 @@ const Contact = () => {
     e.preventDefault();
     console.log("Submitting Data:", formData);
     try {
-      const response = await axios.post("http://localhost:5000", formData);
+      const response = await axios.post("https://u2-dev-back.vercel.app/", formData);
       Swal.fire({
         title: "Success!",
         text: response.data.message,
