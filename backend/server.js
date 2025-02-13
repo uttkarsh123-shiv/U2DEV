@@ -10,12 +10,9 @@ const PORT = 5000;
 // Middleware
 
 app.use(express.json());
-
-app.use(cors({
-    origin: process.env.client_URL?.replace(/\/$/, ""), // Remove trailing slash if present
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    credentials: true
-}));
+app.cors({
+    origin:"https://u2-dev-e28v.vercel.app"
+})
 // MongoDB Connection
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
